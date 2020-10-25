@@ -1,0 +1,33 @@
+<h2 mat-dialog-title class="div-center"> Pokemon Name: {{data.name}}</h2>
+<div mat-dialog-content>
+    <mat-card>
+        <img [src]="data.image" class="div-center">
+        <mat-list>
+            <mat-list-item><strong>Name:</strong>{{data.name}}</mat-list-item>
+            <mat-list-item><strong>weight:</strong>{{data.name}}</mat-list-item>
+            <mat-list-item><strong>description:</strong>{{data.name}}</mat-list-item>
+            <mat-list-item><strong>abilities:</strong>
+                <div *ngFor="let ability of data.abilities">
+                    <span>{{ability}},</span>
+                </div>
+            </mat-list-item>
+            <mat-list-item><strong>Types:</strong>
+                <div *ngFor="let type of data.types">
+                    <span>{{type}},</span>
+                </div>
+            </mat-list-item>
+            <mat-list-item><strong>Evolutions:</strong>
+                <div *ngFor="let evolution of data.evolutions">
+                    <span>{{evolution}},</span>
+                </div>
+            </mat-list-item>
+        </mat-list>
+    </mat-card>
+    
+</div>
+<br/><mat-divider></mat-divider><br/>
+<div mat-dialog-actions class="div-right">
+  <button mat-button color="accent" (click)="onClickCancel()" color="accent">
+    <mat-icon>close</mat-icon>Cancelar
+  </button>
+</div>

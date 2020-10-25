@@ -1,0 +1,8 @@
+.mat-list .mat-list-item {
+    height: 25px; /* default is 72px */
+}
+.div-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
